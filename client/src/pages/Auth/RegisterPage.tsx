@@ -1,8 +1,38 @@
+import StyledInput from "@shared/ui/StyledInput/StyledInput.tsx";
+import StyledButton from "@shared/ui/StyledButton/StyledButton.tsx";
+import {Link} from "react-router";
+import {useState} from "react";
 
 const RegisterPage = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
     return (
-        <div>
-            Registration
+        <div className='flex flex-col gap-10'>
+            <h1 className='text-3xl'>Регистрация</h1>
+
+            <form className='flex flex-col gap-5'>
+                <StyledInput
+                    id='username'
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    labelText='Имя пользователя'
+                />
+                <StyledInput
+                    id='password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    labelText='Пароль'
+                    type='password'
+                />
+                <StyledButton>Зарегистрироваться</StyledButton>
+            </form>
+            <Link
+                className='hover:text-blue-400 duration-300 self-center text-sm'
+                to='/auth/login'
+            >
+                Уже есть аккаунт?
+            </Link>
         </div>
     );
 };
