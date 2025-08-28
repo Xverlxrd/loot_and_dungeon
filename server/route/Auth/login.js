@@ -2,7 +2,7 @@ const {Router} = require('express');
 
 const router = Router()
 
-router.post('/login', (req, res) => {
+router.get('/login', (req, res) => {
     res.json({
         message: 'Index'
     })

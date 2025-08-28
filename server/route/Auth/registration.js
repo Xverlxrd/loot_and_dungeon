@@ -1,29 +1,50 @@
 const {Router} = require('express');
-const prisma = require("../../prisma/client");
+const { PrismaClient } = require('@prisma/client');
+const bcrypt = require('bcrypt');
 
 const router = Router()
+const prisma = new PrismaClient(); // Создаем экземпляр
 
 router.post('/registration', async (req, res) => {
-    const {email, password, username, image} = req.body
-
     try {
-        await prisma.user.create({
+        console.log('Prisma client available:', !!prisma);
+        console.log('Prisma user model available:', !!prisma.user);
+
+        const { email, password, username, image } = req.body;
+
+        // Validate required fields
+        if (!email || !password || !username) {
+            return res.status(400).json({
+                message: 'Email, password, and username are required'
+            });
+        }
+
+
+        // Hash password
+        const hashedPassword = await bcrypt.hash(password, 12);
+
+        // Create user
+        const newUser = await prisma.user.create({
             data: {
                 email,
-                password,
+                password: hashedPassword,
                 username,
-                image
+                image: image || 'default-avatar.png' // Provide a default image
             }
-        })
+        });
+
+        // Remove password from response
+        const { password: _, ...userWithoutPassword } = newUser;
+
         res.status(201).json({
-            message: 'User created'
-        })
+            message: 'User created successfully',
+            user: userWithoutPassword
+        });
+
+    } catch (error) {
+        console.error('Registration error details:', error);
+
     }
-    catch (error) {
-        res.status(500).json({
-            message: error.message
-        })
-    }
-})
+});
 
 module.exports = router
