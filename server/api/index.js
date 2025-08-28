@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const path = require("path");
 const jwt = require('jsonwebtoken');
 
-const indexRouter = require('./route/index')
+const indexRouter = require('../route')
 
 const app = express()
 
@@ -14,3 +14,5 @@ app.use(indexRouter)
 
 dotenv.config();
 app.listen(process.env.PORT || 8082)
+
+module.exports = app;
