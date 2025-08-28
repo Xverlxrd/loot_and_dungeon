@@ -1,8 +1,11 @@
+import {Outlet} from "react-router";
+
 function App() {
 
   return (
     <div>
-      Index
+        <h1>Appp</h1>
+      <Outlet/>
     </div>
   )
 }
