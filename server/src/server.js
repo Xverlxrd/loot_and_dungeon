@@ -11,9 +11,7 @@ async function main() {
 
     app.use(authRouter)
 
-    app.listen(8080, () => {
-        console.log('server is running')
-    })
+    app.listen(process.env.PORT)
 }
 
 main().then(async () => {
