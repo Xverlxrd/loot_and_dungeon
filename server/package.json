@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "prisma generate && next build",
+    "build": "prisma generate",
     "prisma:generate": "prisma generate",
     "dev": "nodemon src/server.js"
   },
