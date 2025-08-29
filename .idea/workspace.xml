@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#fix: исправление ошибок с призмой">
-      <change afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/auth/auth.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/middleware/auth.middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
+    <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#refactor: изменил архитектуру сервера">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/api/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/route/Auth/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/route/Auth/logout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/route/Auth/registration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/vercel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +130,7 @@
       <updated>1756375452766</updated>
       <workItem from="1756375453889" duration="17682000" />
       <workItem from="1756442875317" duration="3364000" />
-      <workItem from="1756479863378" duration="3675000" />
+      <workItem from="1756479863378" duration="4120000" />
     </task>
     <task id="LOCAL-00001" summary="#init: инициализировал клиент и сервер, прописал базовую конфигурацию сервера, добавил нужные зависимости">
       <option name="closed" value="true" />
@@ -232,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756444633822</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#refactor: изменил архитектуру сервера">
+      <option name="closed" value="true" />
+      <created>1756490741276</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1756490741276</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +242,7 @@
     <MESSAGE value="#fix: решил проблему с маршрутизацией" />
     <MESSAGE value="#feature: настроил бд&#10;&#10;- Добавлена схема User&#10;- Добавлен route регистрации" />
     <MESSAGE value="#fix: исправление ошибок с призмой" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix: исправление ошибок с призмой" />
+    <MESSAGE value="#refactor: изменил архитектуру сервера" />
+    <option name="LAST_COMMIT_MESSAGE" value="#refactor: изменил архитектуру сервера" />
   </component>
 </project>
