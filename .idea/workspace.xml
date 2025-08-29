@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#fix: исправил ошибку с призмой">
-      <change afterPath="$PROJECT_DIR$/server/vercel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <updated>1756375452766</updated>
       <workItem from="1756375453889" duration="17682000" />
       <workItem from="1756442875317" duration="3364000" />
-      <workItem from="1756479863378" duration="4489000" />
+      <workItem from="1756479863378" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="#init: инициализировал клиент и сервер, прописал базовую конфигурацию сервера, добавил нужные зависимости">
       <option name="closed" value="true" />
@@ -255,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756491249059</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="#fix: исправил ошибку с призмой">
+      <option name="closed" value="true" />
+      <created>1756491523500</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756491523500</updated>
+    </task>
+    <task id="LOCAL-00016" summary="#fix: исправил ошибку с призмой">
+      <option name="closed" value="true" />
+      <created>1756491629531</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1756491629531</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
