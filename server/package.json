@@ -5,9 +5,9 @@
   "main": "api/index.js",
   "scripts": {
     "dev": "nodemon api/index.js",
-    "build": "prisma generate && prisma db push --skip-generate",
+    "build": "prisma generate",
     "start": "node api/index.js",
-    "vercel-build": "npm install && prisma generate && prisma db push --skip-generate"
+    "vercel-build": "npm install && prisma generate"
   },
   "private": true,
   "devDependencies": {
