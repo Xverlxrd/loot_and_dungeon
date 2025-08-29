@@ -14,16 +14,16 @@ datasource db {
 }
 
 model User {
-  id       Int    @id @default(autoincrement())
-  email    String @unique
-  username String @unique
-  password String
-  image    String
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  username  String   @unique
+  password  String
+  image     String
+  createdAt DateTime @default(now())
 }
 
-model Refresh_token {
-  id        Int      @id @default(autoincrement())
-  userId    Int
-  token     String
-  createdAt DateTime @default(now())
+model RefreshToken {
+  id           Int      @id @default(autoincrement())
+  refreshToken String
+  createdAt    DateTime @default(now())
 }

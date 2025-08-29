@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#fix: исправление ошибок с призмой">
+      <change afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/auth.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/middleware/auth.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/route/Auth/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/route/Auth/logout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/route/Auth/registration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vercel.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Xverlxrd&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Xverlxrd/loot_and_dungeon.git&quot;,
+    &quot;accountId&quot;: &quot;d7a6650c-ca09-4993-9c5a-4e04e0435466&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="31uYW2vIZrIXkMuarrviNUlzAXH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/WebstormProjects/loot_and_dungeon/client/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\User\\WebstormProjects\\loot_and_dungeon\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\client\public" />
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\server\route\Auth" />
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\client\src\app" />
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\client\public" />
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\server\api" />
+      <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\client\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="" />
+      <created>1756375452766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756375452766</updated>
+      <workItem from="1756375453889" duration="17682000" />
+      <workItem from="1756442875317" duration="3364000" />
+      <workItem from="1756479863378" duration="3675000" />
+    </task>
+    <task id="LOCAL-00001" summary="#init: инициализировал клиент и сервер, прописал базовую конфигурацию сервера, добавил нужные зависимости">
+      <option name="closed" value="true" />
+      <created>1756377536688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756377536688</updated>
+    </task>
+    <task id="LOCAL-00002" summary="#init: настроил базовый роутинг в приложении, настроил alias в проекте, настроил базовую архитектуру проекта">
+      <option name="closed" value="true" />
+      <created>1756380279684</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756380279684</updated>
+    </task>
+    <task id="LOCAL-00003" summary="#init: добавил настройки для деплоя сервера">
+      <option name="closed" value="true" />
+      <created>1756381478949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756381478949</updated>
+    </task>
+    <task id="LOCAL-00004" summary="#feature: сверстал форму регистрации и авторизации&#10;&#10;- Добавлен компонент StyledButton.tsx&#10;- Добавлен компонент StyledInput.tsx&#10;- Изменил svg">
+      <option name="closed" value="true" />
+      <created>1756397210165</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756397210165</updated>
+    </task>
+    <task id="LOCAL-00005" summary="#fix: решил проблему с маршрутизацией">
+      <option name="closed" value="true" />
+      <created>1756397653468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756397653468</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#feature: настроил бд&#10;&#10;- Добавлена схема User&#10;- Добавлен route регистрации">
+      <option name="closed" value="true" />
+      <created>1756401730167</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756401730167</updated>
+    </task>
+    <task id="LOCAL-00007" summary="#fix: исправление ошибок с призмой">
+      <option name="closed" value="true" />
+      <created>1756403320695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756403320695</updated>
+    </task>
+    <task id="LOCAL-00008" summary="#fix: исправление ошибок с призмой">
+      <option name="closed" value="true" />
+      <created>1756443567727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756443567727</updated>
+    </task>
+    <task id="LOCAL-00009" summary="#fix: исправление ошибок с призмой">
+      <option name="closed" value="true" />
+      <created>1756443869243</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756443869243</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#fix: исправление ошибок с призмой">
+      <option name="closed" value="true" />
+      <created>1756444067396</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756444067396</updated>
+    </task>
+    <task id="LOCAL-00011" summary="#fix: исправление ошибок с призмой">
+      <option name="closed" value="true" />
+      <created>1756444633822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756444633822</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#init: инициализировал клиент и сервер, прописал базовую конфигурацию сервера, добавил нужные зависимости" />
+    <MESSAGE value="#init: настроил базовый роутинг в приложении, настроил alias в проекте, настроил базовую архитектуру проекта" />
+    <MESSAGE value="#init: добавил настройки для деплоя сервера" />
+    <MESSAGE value="#feature: сверстал форму регистрации и авторизации&#10;&#10;- Добавлен компонент StyledButton.tsx&#10;- Добавлен компонент StyledInput.tsx&#10;- Изменил svg" />
+    <MESSAGE value="#fix: решил проблему с маршрутизацией" />
+    <MESSAGE value="#feature: настроил бд&#10;&#10;- Добавлена схема User&#10;- Добавлен route регистрации" />
+    <MESSAGE value="#fix: исправление ошибок с призмой" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix: исправление ошибок с призмой" />
+  </component>
+</project>
