@@ -1,17 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/server.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "buildCommand": "prisma generate && npm run build",
+  "outputDirectory": ".",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/src/server.js"
     }
-  ],
-  "buildCommand": "prisma generate",
-  "installCommand": "npm install"
+  ]
 }
