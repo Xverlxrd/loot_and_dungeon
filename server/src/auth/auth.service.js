@@ -7,7 +7,7 @@ export class AuthService {
         return token
     }
     createRefreshToken(username) {
-        const token = jwt.sign({ data: username}, process.env.REFRESH_AUTH_SECRET_TOKEN, { expiresIn: '15m' });
+        const token = jwt.sign({ data: username}, process.env.REFRESH_AUTH_SECRET_TOKEN, { expiresIn: '1m' });
 
         return token
     }

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#fix: исправил ошибку с призмой">
+    <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#feature: сделал тестовый роут на login">
+      <change afterPath="$PROJECT_DIR$/server/src/user/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/user/user.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/auth/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/auth/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="user_crud" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,26 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/User/WebstormProjects/loot_and_dungeon/client/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev (1).executor": "Run",
-    "npm.dev.executor": "Run",
-    "ts.external.directory.path": "C:\\Users\\User\\WebstormProjects\\loot_and_dungeon\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/WebstormProjects/loot_and_dungeon/client/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\User\\WebstormProjects\\loot_and_dungeon\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\client\public" />
@@ -120,10 +123,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +147,7 @@
       <workItem from="1756375453889" duration="17682000" />
       <workItem from="1756442875317" duration="3364000" />
       <workItem from="1756479863378" duration="6088000" />
-      <workItem from="1756559724748" duration="4047000" />
+      <workItem from="1756559724748" duration="8092000" />
     </task>
     <task id="LOCAL-00001" summary="#init: инициализировал клиент и сервер, прописал базовую конфигурацию сервера, добавил нужные зависимости">
       <option name="closed" value="true" />
@@ -314,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756493044465</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="#feature: сделал тестовый роут на login">
+      <option name="closed" value="true" />
+      <created>1756569857347</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1756569857347</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +341,7 @@
     <MESSAGE value="#fix: исправление ошибок с призмой" />
     <MESSAGE value="#refactor: изменил архитектуру сервера" />
     <MESSAGE value="#fix: исправил ошибку с призмой" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix: исправил ошибку с призмой" />
+    <MESSAGE value="#feature: сделал тестовый роут на login" />
+    <option name="LAST_COMMIT_MESSAGE" value="#feature: сделал тестовый роут на login" />
   </component>
 </project>

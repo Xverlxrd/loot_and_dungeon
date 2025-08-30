@@ -1,10 +1,9 @@
 import {Router} from "express";
 import {AuthService} from "./auth.service.js";
-import {PrismaClient} from "@prisma/client";
+import {prisma} from "../server.js";
 
 const router = Router()
 const authService = new AuthService()
-const prisma = new PrismaClient()
 
 router.post('/api/login',  async(req, res) => {
     const {username, password} = req.body
