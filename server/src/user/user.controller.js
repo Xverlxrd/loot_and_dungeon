@@ -7,9 +7,9 @@ import jwt from "jsonwebtoken";
 const router = Router()
 const userService = new UserService()
 
-/** TODO
- * Добавить валидацию
- * Добавить обработку ошибок
+/** TODO:
+ * 1. Добавить валидацию
+ * 2. Добавить обработку ошибок
  */
 
 // POST запрос на создание пользователя
