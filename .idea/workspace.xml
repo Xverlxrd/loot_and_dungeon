@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#feature: написал CRUD операции для пользователей&#10;&#10;- Добавил мидлваре для проверки авторизации">
+      <change afterPath="$PROJECT_DIR$/client/src/shared/api/authService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/api/axiosInstance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/types/auth.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Auth/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Auth/LoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/user/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/user/user.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,16 +24,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="user_crud" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,7 +128,7 @@
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev (1)" />
       </list>
     </recent_temporary>
   </component>
