@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0a28f8d1-9f3e-463c-b4a2-21868049cb94" name="Changes" comment="#fix: исправил ошибку с призмой">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +58,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/User/WebstormProjects/loot_and_dungeon/client/public",
     "node.js.detected.package.eslint": "true",
@@ -83,7 +86,7 @@
       <recent name="C:\Users\User\WebstormProjects\loot_and_dungeon\client\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -116,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
@@ -140,7 +143,8 @@
       <updated>1756375452766</updated>
       <workItem from="1756375453889" duration="17682000" />
       <workItem from="1756442875317" duration="3364000" />
-      <workItem from="1756479863378" duration="5821000" />
+      <workItem from="1756479863378" duration="6088000" />
+      <workItem from="1756559724748" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="#init: инициализировал клиент и сервер, прописал базовую конфигурацию сервера, добавил нужные зависимости">
       <option name="closed" value="true" />
@@ -294,7 +298,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756492358628</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="#fix: исправил ошибку с призмой">
+      <option name="closed" value="true" />
+      <created>1756492860166</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1756492860166</updated>
+    </task>
+    <task id="LOCAL-00021" summary="#fix: исправил ошибку с призмой">
+      <option name="closed" value="true" />
+      <created>1756493044465</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1756493044465</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,6 +5,7 @@ import helmet from "helmet";
 
 const app = express()
 export const prisma = new PrismaClient()
+
 app.use(express.json())
 app.use(helmet());
 
