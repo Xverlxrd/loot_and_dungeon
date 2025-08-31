@@ -1,6 +1,7 @@
 import {Router} from "express";
 import {AuthService} from "./auth.service.js";
 import {prisma} from "../server.js";
+import jwt from "jsonwebtoken";
 
 const router = Router()
 const authService = new AuthService()
@@ -49,7 +50,7 @@ router.post('/api/login',  async(req, res) => {
     res.status(201).json(
         {
             access_token: access_token,
-            refresh_token: refresh_token
+            refresh_token: refresh_token,
         }
     )
 })

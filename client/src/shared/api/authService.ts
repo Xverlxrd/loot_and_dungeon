@@ -14,8 +14,8 @@ class AuthService {
             const response = await axiosInstance.post('/login', data)
             return response.data
         }
-        catch {
-            console.log('Ошибка')
+        catch (e) {
+            console.log('Ошибка:', e.response.data.error)
         }
     }
 }

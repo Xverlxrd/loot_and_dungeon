@@ -19,7 +19,7 @@ router.post('/api/user', authMiddleware ,async(req, res) => {
 
     if(prisma.user.findUnique(username || email) ) {
         res.status(401).json({
-            message: "Пользователь уже существует"
+            error: "Пользователь уже существует"
         })
     }
 

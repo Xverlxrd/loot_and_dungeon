@@ -1,43 +1,49 @@
 import StyledInput from "@shared/ui/StyledInput/StyledInput.tsx";
-import {useState} from "react";
 import StyledButton from "@shared/ui/StyledButton/StyledButton.tsx";
-import {Link} from "react-router";
+import {Link, useNavigate} from "react-router";
+import type {loginRequestData} from "@shared/types/auth.types.ts";
+import {type SubmitHandler, useForm} from "react-hook-form";
 import {authService} from "@shared/api/authService.ts";
 
-/** TODO:
- * 1. Сделать логин
- * 2. Настроить аксиос инстанс для сохранения токена
- * 3. Выбрать куки или локал сторадж
- * 4. Удалть стейты и сделать нормальную работу с формой
- */
-
 const LoginPage = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const {register, handleSubmit, formState: { errors }} = useForm<loginRequestData>()
+    const navigate = useNavigate()
+    const onSubmit: SubmitHandler<loginRequestData> = async(data) => {
+        const token = await authService.login(data)
+        if(token) {
+            localStorage.setItem('access_token', token.access_token)
+            localStorage.setItem('refresh_token', token.refresh_token)
+        }
 
-    const handleSubmit = async () => {
-       const token =  await authService.login({username, password})
-    };
+        navigate('/')
+    }
 
     return (
         <div className='flex flex-col gap-10'>
             <h1 className='text-3xl'>Вход</h1>
 
-            <form onSubmit={handleSubmit} className='flex flex-col gap-5'>
+            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5'>
                 <StyledInput
+                    className={`${errors.username && 'border-red-500 focus:ring-red-500'}`}
+                    {...register('username', { required: true})}
                     id='username'
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
                     labelText='Имя пользователя'
                 />
+                {errors.username && (
+                    <span className='font-bold text-red-500'>Username is required</span>)
+                }
+
                 <StyledInput
+                    className={`${errors.password && 'border-red-500 focus:ring-red-500'}`}
+                    {...register('password', { required: true})}
                     id='password'
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
                     labelText='Пароль'
                     type='password'
                 />
-                <StyledButton onClick={handleSubmit}>Войти</StyledButton>
+                {errors.password && (
+                    <span className='font-bold text-red-500'>Password is required</span>
+                )}
+                <StyledButton type='submit'>Войти</StyledButton>
             </form>
             <Link
                 className='hover:text-blue-400 duration-300 self-center text-sm'
